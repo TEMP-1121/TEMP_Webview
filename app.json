@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "일세",
+    "slug": "ilse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ilse.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ilse.app"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}

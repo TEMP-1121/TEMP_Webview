@@ -17,7 +17,9 @@ const BASE_URL = "https://temp-client-two.vercel.app/";
 
 // ② 앱 안에서 그대로 열 도메인. 다른 도메인도 앱 안에서 열어야 하면 여기 추가한다.
 //    여기 없는 주소(외부 사이트·mailto·tel 등)는 휴대폰 기본 앱으로 연다.
-const IN_APP_HOSTS = [new URL(BASE_URL).host];
+// 카카오 로그인은 시작한 WebView 쿠키로 이어지므로 카카오 화면도 앱 안에서 열어야 한다.
+// 밖(기본 브라우저)으로 빠지면 돌아올 때 쿠키가 없어 백엔드가 AUTH_OAUTH_FAILED를 준다
+const IN_APP_HOSTS = [new URL(BASE_URL).host, "kauth.kakao.com", "accounts.kakao.com"];
 
 function isInAppUrl(url) {
   if (url === "about:blank") return true;

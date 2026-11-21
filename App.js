@@ -13,7 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 
 // ① 배포한 웹 주소. 반드시 https:// 로 시작해야 APK에서 열린다.
-const BASE_URL = "https://ilse.vercel.app/";
+const BASE_URL = "https://temp-client-two.vercel.app/";
 
 // ② 앱 안에서 그대로 열 도메인. 다른 도메인도 앱 안에서 열어야 하면 여기 추가한다.
 //    여기 없는 주소(외부 사이트·mailto·tel 등)는 휴대폰 기본 앱으로 연다.
